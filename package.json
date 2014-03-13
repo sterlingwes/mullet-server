@@ -1,0 +1,9 @@
+{
+    "name": "mullet server routing",
+    "version": "0.0.0",
+    "description": "",
+    "main": "main.js",
+    "mullet": {
+        "priority": -999
+    }
+}
