@@ -11,6 +11,10 @@ module.exports = function(config, sessions) {
         this.express = config.app;
     }
     
+    Router.prototype.getInstance = function(app) {
+        return new Router(app);
+    };
+    
     Router.prototype.forceAuth = function(req,res,next) {
         sessions.emit('verify', req, res, next);
     };
